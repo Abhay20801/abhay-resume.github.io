@@ -1,0 +1,362 @@
+body {
+  margin: 0px;
+}
+
+#body-header {
+  height: 65vh;
+  opacity: 0.8;
+  background-image: url(macbook_mouse.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.horizontal-list {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 0px 8px 8px 0px;
+}
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s, border-bottom 4s;
+}
+.horizontal-list li a:hover {
+  color: red;
+  border-bottom: 1px solid;
+}
+.text-center {
+  text-align: center;
+}
+#name-social-container {
+  margin-top: 20vh;
+}
+
+#name1 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section:nth-child(2n) {
+  background-color: lightgrey;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+section:target {
+  animation: flash 1s;
+}
+@keyframes flash {
+  0% {
+    background-color: lightgrey;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: lightgray;
+  }
+}
+/* About */
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+}
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: rgb(5, 50, 173);
+  display: block;
+  margin-top: -5rem;
+}
+#about-para {
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: grey;
+  line-height: 28px;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+/* The color of the shadow is 'lightgrey'.
+2. The color of the paragraph is 'grey'.
+3. The color of the highlighted text in the paragraph is '#2857a4'. */
+/* Skill */
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 10px auto;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
+.slider {
+  height: 50px;
+  width: 180px;
+}
+
+.skill-display {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-progress {
+  border-radius: 0.8rem;
+  width: 150px;
+  height: 25px;
+  background-color: lightgrey;
+  border: 2px solid grey;
+}
+.skill-progress > div {
+  border: 80px 0px 0px 20px;
+}
+.skill-display > div {
+  margin: 30px;
+}
+.icons i {
+  transform: scale(2.5, 2.5);
+  margin-left: 60px;
+  margin-bottom: 15px;
+}
+.slider {
+  border-radius: 0.8rem;
+  height: inherit;
+}
+.html {
+  width: 85%;
+  background-color: rgb(41, 27, 231);
+  box-shadow: 2px 0px 2px rgb(41, 27, 231);
+}
+.CSS {
+  width: 65%;
+  background-color: rgb(212, 159, 13);
+}
+.c {
+  width: 95%;
+  background-color: rgb(14, 240, 40);
+}
+.js {
+  width: 35%;
+  background-color: rgb(244, 61, 29);
+}
+.nodejs {
+  width: 55%;
+  background-color: rgb(44, 126, 12);
+}
+.mongo {
+  width: 50%;
+  background-color: rgb(32, 180, 238);
+}
+.REACT {
+  width: 75%;
+  background-color: rgb(235, 55, 187);
+}
+.excel {
+  width: 99%;
+  background-color: rgb(240, 104, 25);
+}
+
+.html span,
+.CSS span,
+.c span,
+.js span,
+.nodejs span,
+.mongo span,
+.REACT span,
+.excel span {
+  color: white;
+  margin-left: 12px;
+}
+
+/* Common Margin class */
+.mb75px {
+  margin-bottom: 75px;
+}
+
+/*     Contact section */
+#contact {
+  background: linear-gradient(120deg, blue, purple);
+}
+#white-font {
+  color: white;
+}
+.contact-body {
+  width: 100%;
+  display: flex;
+}
+.box {
+  flex: 1;
+  margin-right: 20px;
+}
+.contact-body > div {
+  display: inline-block;
+}
+.form {
+  display: inline-block;
+}
+#container-intouch {
+  overflow-wrap: break-word;
+  color: white;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(237, 237, 233, 0.24),
+    0 17px 50px 0 rgba(230, 220, 220, 0.19);
+}
+input {
+  border: none;
+  border-bottom: 2px solid white;
+  border-color: white;
+  height: 20px;
+  width: 8px;
+  margin-left: 60px;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  width: 60%;
+  background-color: transparent;
+}
+.contact-info {
+  display: inline-block;
+}
+#intouch {
+  margin-left: 40%;
+  margin-top: -10px;
+}
+#address {
+  margin-left: 40%;
+  margin-bottom: 50px;
+}
+
+/*  Work experience  */
+/* timeline */
+.timeline {
+  position: relative;
+  width: 75%;
+  /* border: 2px solid black; */
+  left:-1%;
+}
+
+.timeline-box {
+  position: relative;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+  /* border: 2px solid black; */
+  margin: 5px;
+ 
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+.timeline-box::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: -12.5%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: grey;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -9.5%;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: grey;
+  z-index: 1;
+}
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0;
+  border: 3px dashed #0096fa6b;
+  top: 10%;
+  left: 50%;
+}
+.timeline-traveller {
+  position: sticky;
+  top: 25%;
+  transform: rotate(90deg);
+}
+.timeline-box h3{
+    color:#2857a4; 
+}
+.timeline-box div h4{
+    font-weight: 600;
+    color:rgb(236, 149, 9);
+}
+.timeline-box h4{
+    margin-bottom: -14px;
+    margin-top: -4px;
+}
+.timeline-heading{
+    height:auto;
+    width:auto;
+    text-align: right;   
+}
+.timeline-heading h3{
+    margin-top:2px;
+    
+}
+.timeline-heading p{
+    color:rgb(106, 103, 103);
+}
+#to-right{
+    text-align:right;
+    color:rgb(106, 103, 103);
+}
