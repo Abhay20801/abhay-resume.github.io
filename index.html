@@ -21,11 +21,11 @@
   <body>
     <header id="body-header">
       <nav>
-        <ul class="horizontal-list text-center">
+        <ul class="horizontal-list text-center nav-menu">
           <li><a href="#">Home</a> </li>
           <li><a href="#about">About</a> </li>
           <li><a href="#skills">Skills</a> </li>
-          <li><a href="#experience">Experience</a> </li>
+          <li id="btn"><a href="#experience">Experience</a> </li>
           <li><a href="#education">Education</a> </li>
           <li><a href="#achivements">Achivements</a> </li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -296,12 +296,71 @@
 
       <section id="portfolio">
         <h1 class="section-heading mb75px">
-          <span>
-            <i class="fa-solid fa-file"></i>
-          </span>
-          <span>PORTFOLIO</span>
+            <span>
+                <i class="fas fa-th-list"></i>
+            </span>
+            <span> Portfolio </span>
         </h1>
-      </section>
+
+        <div id="portfolio-container">
+
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+            <div class="portfolio-image-container">
+                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                <div class="portfolio-details">
+                    <p>
+                        Write here basic details about the project.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
       <section id="contact">
         <h1 class="section-heading mb75px">
@@ -368,25 +427,7 @@
         </div>
       </section>
     </main>
-   
-    
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyAP4y8d3QE8fxo-oHLsD6AXuKO7n2SZ_Zp5joC9ZMmzZ830Sv4ol5U4iB2r2-QqxUx/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const success = document.getElementById('success');
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            success.innerHTML="Message has Shared!!";
-            setTimeout(function()
-            {
-              success.innerHTML="";
-            },5000)
-            form.reset();
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+
+    <script src="script.js" async defer></script>
   </body>
 </html>
